@@ -4,7 +4,7 @@ This repository contains code and associated files for deploying a plagiarism de
 
 ## Project Overview
 
-In this project, you will be tasked with building a plagiarism detector that examines a text file and performs binary classification; labeling that file as either *plagiarized* or *not*, depending on how similar that text file is to a provided source text. Detecting plagiarism is an active area of research; the task is non-trivial and the differences between paraphrased answers and original work are often not so obvious.
+In this project is based on building a plagiarism detector that examines a text file and performs binary classification; labeling that file as either *plagiarized* or *not*, depending on how similar that text file is to a provided source text. Detecting plagiarism is an active area of research; the task is non-trivial and the differences between paraphrased answers and original work are often not so obvious.
 
 This project will be broken down into three main notebooks:
 
@@ -23,11 +23,16 @@ This project will be broken down into three main notebooks:
 **Notebook 3: Train and Deploy Your Model in SageMaker**
 
 * Upload your train/test feature data to S3.
-* Define a binary classification model and a training script.
+* Define a binary classification model (SVC with RBF Kernel) and a training script.
 * Train your model and deploy it using SageMaker.
 * Evaluate your deployed classifier.
 
+
+## Results
+
+Using selected features with lowest correlations between each other, along with the Support Vectors Classifier model, the model was able to achieve up to 97% accuracy.
+
 ---
 
-Please see the [README](https://github.com/udacity/ML_SageMaker_Studies/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
+
 
